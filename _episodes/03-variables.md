@@ -42,6 +42,7 @@ There are two huge advantages in using variables:
 2. Legibility. With good variable names, the script becomes more legible as it is apparent to other readers what is being done/evaluated at each step of the script. 
 
 > ##Variable names in R
+>
 > There are a few rules that needs to be observed when naming variables, namely:
 >1. Variable names may not start with a number.
 >2. Variable names cannot contain mathematical symbols such as "+", "-","*", "/".
@@ -50,6 +51,7 @@ There are two huge advantages in using variables:
 
 ## Assigning values to variables
 Assignment can be done using either '=' or '<-'. For example: 
+
 ~~~
 x=5
 x<-5
