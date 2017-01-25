@@ -12,6 +12,7 @@ keypoints:
 - "There is a wealth of resources to seek help in R, in large part facilitated by the active R user community."
 ---
 ## Getting help in R
+
 ### Documentations
 R functions are required to be documented. The documentation of a function can be accessed using the following: 
 
@@ -59,6 +60,7 @@ These documentations are usually very lengthy and detailed, and can sometimes be
 There are various forums that contain a wealth of information about R. In fact, it is safe to say that most, if not all, questions that one comes across in R will likely have been asked before in one or more of these forums (unless you are reporting a new bug). Two of the most active forums are StackOverflow and the R-mailing list. More often than not, a quick Google search will usually turn up some results to our queries in one or both of these forums. 
 
 ## More resources for R programming
+
 ### Online courses 
 I found one particular online course offered by DataCamp to be very accessible for people who want to be more familiar with the basics of R. The course can be found at the URL: https://www.datacamp.com/getting-started?step=2&track=r. One additional advantage of the course is that it tailors to people of different levels/competencies.
 
