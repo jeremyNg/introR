@@ -59,6 +59,7 @@ Likewise, one can install R packages from software repositories. The main reposi
 
 ### Installing packages from CRAN 
 Installing packages from CRAN is relatively straightforward, and can be achieved with a single command: 
+
 ~~~
 install.packages("package of interest")
 ~~~
@@ -76,8 +77,10 @@ library("package")
 ~~~ 
 
 One can check what packages are loaded using the following command: 
+
 ~~~
 sessionInfo()
 ~~~ 
+{: R}
 
-The sessionInfo command not only tells us what package is loaded, but also what the version numbers of each package is (which is really useful when you run into problems).
+The sessionInfo command not only tells us what package is loaded, but also what the version numbers of each package is (which is really useful when you run into problems and want to ask for help on the various forums, as some of the problems reported might have been fixed in later versions of the package).
