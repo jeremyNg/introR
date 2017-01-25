@@ -8,6 +8,8 @@ questions:
 keypoints: 
 - "R is an open-source interpreted language that is commonly used for statistical analysis and bioinformatics." 
 - "R can be extended via the installation of packages for specific tasks."
+objectives:
+- "Appreciate the context in which R will be used for bioinformatics analysis."
 ---
 
 ## What is R 
