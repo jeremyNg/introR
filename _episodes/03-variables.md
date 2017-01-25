@@ -80,6 +80,7 @@ Executing the above script will yield the following:
 {: R}
 
 In the above snippet, we did the following: 
+
 1. Created a variable *numbers*, which was a vector of numbers
 2. Created a variable *average*, which is a function that calculates the average of a vector of numbers
 3. Assigned the result of passing *numbers* through our function *average* to a new variable *result*
