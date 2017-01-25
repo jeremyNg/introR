@@ -60,4 +60,32 @@ x<-5
 
 In both cases, the variable *x* will be assigned the value of 5. Stylistically, we use '<-' in R for assignment so as to avoid confusion with '==', which is used to test for the equality of 2 objects. 
 
+Variables do not necessarily have to be values. In fact, they can be anything. For example, the following variable *average* is a function that calculates the average for a vector of numbers (more on that in the next section). 
+
+~~~
+numbers <-c(10,20,30,40,50,60,70,80)
+average<-function(x){
+	return(sum(x)/length(x))
+}
+result<-average(numbers)
+result
+~~~
+{: R}
+
+Executing the above script will yield the following: 
+
+~~~
+[1] 45
+~~~
+{: R}
+
+In the above snippet, we did the following: 
+1. Created a variable *numbers*, which was a vector of numbers
+2. Created a variable *average*, which is a function that calculates the average of a vector of numbers
+3. Assigned the result of passing *numbers* through our function *average* to a new variable *result*
+
+
 ## Types of variables: Local vs. global variables 
+
+## Variables in R are mutable
+
