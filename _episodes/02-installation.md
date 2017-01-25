@@ -70,6 +70,12 @@ It is important to realize the name of the package is (1) case sensitive, and (2
 ### Installing BioConductor packages 
 Installing BioConductor packages 
 
+> ## Default packages installed with BiocLite
+>
+> Although the biocLite command requires us to specify the packages we wish to install from BioConductor, we can run biocLite without specifying any arguments. In this case, biocLite installs a set of default packages. Can you find out which are the packages that were installed by default? 
+> *Hint: check out what packages have been installed using the command installed.packages()* 
+{: .challenge}
+
 ## Loading packages 
 
 ~~~
