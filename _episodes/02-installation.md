@@ -61,7 +61,7 @@ It is important to realize the name of the package is (1) case sensitive, and (2
 Installing BioConductor packages 
 
 ## Loading packages 
-In order for a function from a function to be accessible, the package must first be loaded. This is done using the following command: 
+
 ~~~
 library("package") 
 ~~~ 
