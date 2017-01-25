@@ -3,10 +3,11 @@ title: "Installation of R"
 teaching: 5
 exercises: 0
 questions:
-- "Installing R and R studio."
-- "Basics of R." 
+- "How do I install R and R studio?"
+- "How do I install other packages in R?"
 objectives:
 - "Be able to install R and R-studio on a Linux system." 
+- "Be familiar with installing packages in R, including BioConductor packages." 
 ---
 
 ## Installing R
@@ -30,20 +31,44 @@ The first line (*wget*) fetches the package from the source (https://download1.r
 
 Once installed, you can start R-studio by clicking on the R-studio icon in the **Applications** list. 
 
-## A note on versions
-It is important to note that sometimes, the version of R available on the repository is behind (that is, older than) the current version of R. In this case, one can simply update the list of repositories so that the package manager will download from the R site (which contains the latest version) instead of getting from *apt* only. This can be done by editing the file */etc/apt/sources.list*, a text file that contains the list of all repositories *apt* will search. The following line needs to be inserted into the sources list:
+> ##A note on versions
+It is important to note that sometimes, the version of R available on the repository is behind (that is, older than) the current version of R. In this case, one can simply update the list of repositories so that the package manager will download from the R site (which contains the latest version) instead of getting from *apt* only. This can be done by editing the file */etc/apt/sources.list*, a text file that contains the list of all repositories *apt* will search. The following line needs to be inserted into the sources list for an Ubuntu system:
 ~~~
-deb http://cran.rstudio.com/bin/linux/ubuntu xenial/
+>deb http://cran.rstudio.com/bin/linux/ubuntu xenial/
 ~~~
-{: bash}  
-
-Once this is done, you will need to update *apt* by using the command, as well as allow *apt* to download from the new source. This is done using the following commands: 
+>Once this is done, you will need to update *apt* by using the command, as well as allow *apt* to download from the new source. This is done using the following commands: 
 ~~~
 gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9 
 gpg -a --export E084DAB9 | sudo apt-key add 
 sudo apt-get update
 ~~~
 {: bash} 
-Thereafter, the previous instructions to install R applies. 
+> Thereafter, the previous instructions to install R applies. 
 
+## Installing packages in R 
+Likewise, one can install R packages from software repositories. The main repository where R packages are submitted to is **CRAN** (The Comprehensive R Archive Network). However, CRAN is by no means the only repository -- increasingly, people are also hosting packages on *Github*, and there are other more specialized repository as well. For this present purpose, we will focus on installation of packages from 2 repositories -- CRAN, and BioConductor, the latter of which is the main repository for bioinformatics software packages. 
 
+### Installing packages from CRAN 
+Installing packages from CRAN is relatively straightforward, and can be achieved with a single command: 
+~~~
+install.packages("package of interest")
+~~~
+{: R}
+
+It is important to realize the name of the package is (1) case sensitive, and (2) placed within quotes. The reason for the latter is because if there is no quotes placed around the name, R will assume that you are referring to a variable (next chapter), which might not exist because you did not create it yet or because the value of the variable is an invalid package. 
+
+### Installing BioConductor packages 
+Installing BioConductor packages 
+
+## Loading packages 
+
+~~~
+library("package") 
+~~~ 
+
+One can check what packages are loaded using the following command: 
+~~~
+sessionInfo()
+~~~ 
+
+The sessionInfo command not only tells us what package is loaded, but also what the version numbers of each package is (which is really useful when you run into problems).
