@@ -7,7 +7,7 @@ questions:
 - "Why R?" 
 keypoints: 
 - "R is an open-source interpreted language that is commonly used for statistical analysis and bioinformatics." 
-- "R can be extended via the installation of packages for specific tasks."
+- "R can be extended via the installation of packages for specific tasks, many of which are actively maintained."
 ---
 
 ## What is R 
