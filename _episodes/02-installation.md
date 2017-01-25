@@ -8,6 +8,12 @@ questions:
 objectives:
 - "Be able to install R and R-studio on a Linux system." 
 - "Be familiar with installing packages in R, including BioConductor packages." 
+keypoints: 
+- "R can be installed via the Linux package managers." 
+- "Rstudio is a powerful interface for R programming."
+- "Like Linux, R has a system for downloading and installing packages from the R package repositories."
+- "CRAN is the main repository for R packages, while BioConductor is the main repository for bioinformatics related packages." 
+- "The *library* command allows one to load an installed package in the current R session." 
 ---
 
 ## Installing R
