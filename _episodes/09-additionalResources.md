@@ -20,24 +20,19 @@ help(function)
 ~~~
 {: R}
 This will give us the following
+
 ~~~
 mean                   package:base                    R Documentation
-
 Arithmetic Mean
-
 Description:
-
      Generic function for the (trimmed) arithmetic mean.
-
 Usage:
 
      mean(x, ...)
      
      ## Default S3 method:
-     mean(x, trim = 0, na.rm = FALSE, ...)
-     
+     mean(x, trim = 0, na.rm = FALSE, ...)     
 Arguments:
-
        x: An R object.  Currently there are methods for numeric/logical
           vectors and date, date-time and time interval objects.
           Complex vectors are allowed for ‘trim = 0’, only.
@@ -48,16 +43,12 @@ Arguments:
 
    na.rm: a logical value indicating whether ‘NA’ values should be
           stripped before the computation proceeds.
-
      ...: further arguments passed to or from other methods.
-
 Value:
-
      If ‘trim’ is zero (the default), the arithmetic mean of the values
      in ‘x’ is computed, as a numeric or complex vector of length one.
      If ‘x’ is not logical (coerced to numeric), numeric (including
      integer) or complex, ‘NA_real_’ is returned, with a warning.
-
      If ‘trim’ is non-zero, a symmetrically trimmed mean is computed
      with a fraction of ‘trim’ observations deleted from each end
 ~~~
