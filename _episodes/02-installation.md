@@ -72,7 +72,8 @@ Installing BioConductor packages
 
 > ## Default packages installed with BiocLite
 >
-> Although the biocLite command requires us to specify the packages we wish to install from BioConductor, we can run biocLite without specifying any arguments. In this case, biocLite installs a set of default packages. Can you find out which are the packages that were installed by default? 
+> Although the *biocLite* command requires us to specify the packages we wish to install from BioConductor, we can run biocLite without specifying any arguments. In this case, biocLite installs a set of default packages. Can you find out which are the packages that were installed by default? 
+>
 > *Hint: check out what packages have been installed using the command installed.packages()* 
 {: .challenge}
 
