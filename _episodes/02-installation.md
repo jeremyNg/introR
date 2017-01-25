@@ -14,6 +14,7 @@ keypoints:
 - "Like Linux, R has a system for downloading and installing packages from the R package repositories."
 - "CRAN is the main repository for R packages, while BioConductor is the main repository for bioinformatics related packages." 
 - "The *library* command allows one to load an installed package in the current R session." 
+- "The installed.packages command allows us to view what packages have been installed on our system, while the sessionInfo commands allows us to view what packages have been loaded in the current session of R."
 ---
 
 ## Installing R
@@ -110,6 +111,7 @@ As alluded to earlier, packages are loaded using the *library* command, as follo
 library("package") 
 ~~~ 
 {: R}
+Importantly, packages are loaded only in the current session of R. That is, if another instance of R is started or the current session of R is restarted, these packages will no longer be loaded and will need to be re-loaded again. 
 
 One can check what packages are loaded using the following command: 
 
@@ -118,4 +120,31 @@ sessionInfo()
 ~~~ 
 {: R}
 
-The sessionInfo command not only tells us what package is loaded, but also what the version numbers of each package is (which is really useful when you run into problems and want to ask for help on the various forums, as some of the problems reported might have been fixed in later versions of the package).
+An example of a *sessionInfo* output looks like this: 
+
+~~~
+R version 3.3.2 (2016-10-31)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: OS X El Capitan 10.11.6
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ggplot2_2.2.0
+
+loaded via a namespace (and not attached):
+ [1] colorspace_1.3-2 scales_0.4.1     assertthat_0.1   lazyeval_0.2.0  
+ [5] plyr_1.8.4       tools_3.3.2      gtable_0.2.0     tibble_1.2      
+ [9] Rcpp_0.12.8      grid_3.3.2       munsell_0.4.3  
+~~~
+{: output}
+
+> ## Attached packages vs packages loaded via namespace
+>
+> From the output above, you can see that I have loaded the ggplot2 package, which is a package used extensively for data visualization. This information is found in the *other attached packages* section. However, you will also notice that there are a whole bunch of packages that are listed in the *loaded via a namespace (and not attached)* section. These are packages that are suggested by ggplot2. Unlike the functions in ggplot2 however, the functions in these packages cannot be directly accessed by me because the packages are not explicitly loaded. 
+
+The sessionInfo command not only tells us what package is loaded, but also what the version numbers of each package is. The latter information is really useful when you run into problems and want to ask for help on the various forums, as some of the problems reported might have been fixed in later versions of the package.
