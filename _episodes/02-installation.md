@@ -68,7 +68,33 @@ install.packages("package of interest")
 It is important to realize the name of the package is (1) case sensitive, and (2) placed within quotes. The reason for the latter is because if there is no quotes placed around the name, R will assume that you are referring to a variable (next chapter), which might not exist because you did not create it yet or because the value of the variable is an invalid package. 
 
 ### Installing BioConductor packages 
-Installing BioConductor packages 
+Installing BioConductor packages requires that you first download the BioConductor installer, which provides an interface to install other BioConductor packages. This is done using the following command:
+
+~~~
+source(http://bioconductor.org/biocLite.R)
+~~~
+{: R}
+
+Once the Bioconductor installer package is installed, you will need to load the library. Loading of packages in R is done using the following: 
+
+~~~
+library("library to be loaded)
+~~~
+{: R}
+
+In the above case, we will do the following: 
+
+~~~
+library(BiocInstaller)
+~~~
+{: R}
+This will load the BiocInstaller package, which then allows us to access the functions contained within the package. Thereafter, we will use the biocLite command to install the packages we want to install, as shown below: 
+
+~~~
+biocLite("packages to be installed")
+~~~
+
+The above command will install packages that are found in the BioConductor repository. Occassionally, you will also be prompted to update your older packages -- this is usually recommended as packages are constantly being updated to fix newly discovered bugs or improve performance. 
 
 > ## Default packages installed with BiocLite
 >
@@ -78,10 +104,12 @@ Installing BioConductor packages
 {: .challenge}
 
 ## Loading packages 
+As alluded to earlier, packages are loaded using the *library* command, as follows: 
 
 ~~~
 library("package") 
 ~~~ 
+{: R}
 
 One can check what packages are loaded using the following command: 
 
