@@ -11,7 +11,7 @@ objectives:
 ---
 
 ## Installing R
-(* This section is for your information only; R and R-studio has already been installed on the computers in the laboratory*). 
+(*This section is for your information only; R and R-studio has already been installed on the computers in the laboratory*). 
 
 Like other packages, R can be installed using a package manager. In Ubuntu, this can be done using the following command: 
 
