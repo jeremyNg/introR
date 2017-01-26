@@ -41,7 +41,7 @@ There are two huge advantages in using variables:
 1.  Not having to 'hard-code' any value in our scripts. This is especially important when a single variable is referenced more than once in the script -- in that case, we only need to change the initial value assigned to the variable instead of changing the value everywhere in the script.
 2. Legibility. With good variable names, the script becomes more legible as it is apparent to other readers what is being done/evaluated at each step of the script. 
 
-> ##Variable names in R
+>## Variable names in R
 >
 > There are a few rules that needs to be observed when naming variables, namely:
 >1. Variable names may not start with a number.

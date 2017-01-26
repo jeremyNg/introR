@@ -22,13 +22,12 @@ The **numeric** class is the most commonly encountered data class in R. Unlike *
 [1] "numeric"
 ~~~
 
-  On the other hand, the when one tries to convert between a numeric and an integer (which cannot represent decimals), the decimal is stripped and the number is always **rounded down**. For example:
- 
- ~~~
+On the other hand, the when one tries to convert between a numeric and an integer (which cannot represent decimals), the decimal is stripped and the number is always **rounded down**. For example:
+~~~
 > as.integer(3.6)
- [1] 3
- ~~~
- {: R} 
+[1] 3
+~~~
+ {: R}
  
 
 This behavior is extremely important to bear in mind, as it defies common mathematics (which will have yielded 4 because 3.6 should have been rounded up instead). 
@@ -59,6 +58,7 @@ NAs introduced by coercion
 Although the test returns a value of TRUE, this TRUE is not in fact a character object but a logical object. 
 
 ## Data types in R 
+
 ## Vectors
 
 ## Lists
