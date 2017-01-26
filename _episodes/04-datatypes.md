@@ -21,6 +21,7 @@ Vectors are the simplest one dimensional representation of data in R. They can b
 
 ### Characters 
 **Characters** are an important mode
+
 ### Numeric and integers
 The **numeric** mode is the most commonly encountered mode of data in R. Unlike **integer**, decimals can be represented as numerics. For example: 
 
