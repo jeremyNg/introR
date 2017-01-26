@@ -20,9 +20,9 @@ keypoints:
 Vectors are the simplest one dimensional representation of data in R. They can be made of the following types (mode) of data, including a mix of these data types. Likewise, computations involving vectors is one of the fastest in R and hence strongly encouraged (known as *vectorization*).  
 
 ### Characters 
-
+**Characters** are an important mode
 ### Numeric and integers
-The **numeric** class is the most commonly encountered data class in R. Unlike **integer**, decimals can be represented in this class of object. For example: 
+The **numeric** mode is the most commonly encountered mode of data in R. Unlike **integer**, decimals can be represented as numerics. For example: 
 
 ~~~
 >x<-3.14
