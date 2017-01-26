@@ -57,7 +57,7 @@ NAs introduced by coercion
 > ## Errors and warnings in R
 >
 > Two types of messages will be encountered in R: error messages and warning messages. Although both  occurs when there is something wrong about the code you are running, they have slightly different behaviors. Errors will terminate the code (that is, the code will not be evaluated at all), while warnings will not. Hence, it is important to always check for the output of scripts that were completed with warnings, as the script might not have done what you had intended for it in the first place. 
-
+{: popup}
 
 ### Logical 
 **Logical** data can only take on TRUE or FALSE values, and are commonly encountered when we test if a certain condition is fulfilled. For example: 
