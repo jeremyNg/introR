@@ -18,6 +18,7 @@ keypoints:
 
 ## Vectors
 Vectors are the simplest one dimensional representation of data in R. They can be made of the following types (mode) of data, including a mix of these data types. Likewise, computations involving vectors is one of the fastest in R and hence strongly encouraged (known as *vectorization*).  
+
 ### Characters 
 
 ### Numeric and integers
