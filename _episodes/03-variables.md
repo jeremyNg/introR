@@ -8,6 +8,10 @@ questions:
 objectives:
 - "Understand what are variables and how are values assigned to variables."
 - "Differentiate global and local variables, and understand how to assign a variable within a function as a global variable." 
+keypoints:
+- "Variables are used to store values in a script." 
+- "Local variables can only be referred to within the environment it was found in, while global environments can be referred to anywhere." 
+- "Variable values can be updated by referencing itself and then assigning the new value to itself." 
 ---
 ## Variables: What and why
 The concept of variables is found in all programming languages. For example, the following example shows a variable that is assigned the value of 5: 
@@ -84,7 +88,40 @@ In the above snippet, we did the following:
 3. Assigned the result of passing *numbers* through our function *average* to a new variable *result*
 
 ## Types of variables: Local vs. global variables 
-There are two distinct types of variables -- local variables and global variables. 
+There are two distinct types of variables -- local variables and global variables.  To understand what is happening, consider the below snippets: 
+
+~~~
+>test<-function(){
+	localVar<-10
+	return (localVar)
+}
+>test()
+> test()
+[1] 10
+
+>localVar
+Error: object 'localVar' not found
+~~~
+{: R}
+The above example gives us some insights into the differences between local and global variables. In the first line, we defined a new variable **test** that happens to be a function. "<-" always assigns the variable within the current *environment*, which is usually the global environment. Any variable found in the global environment can be accessed from anywhere (even within functions). However, within the function **test** we had a new variable **localVar** defined. This variable is defined only within the current environment since the assignment was done with "<-". In this case, *localVar* is defined only in the environment of the **test** function and hence cannot be accessed anyway except in the environment defined by the function **test**. 
+
+If we want to make a variable defined within a function accessibly globally, we will do the following: 
+
+~~~
+>test<-function(){
+	localVar<<-10
+	return (localVar)
+}
+>test()
+> test()
+[1] 10
+
+>localVar
+[1] 10
+~~~
+{: R}
+
+Notice that instead of using "<-", we used "<<-". The assignment operator "<<-" is used to assign values to the global environment as opposed to "<-" which only assigns to variables in the current environment.
 
 ## Variables can be updated 
 What happens in the following code snippet? 
