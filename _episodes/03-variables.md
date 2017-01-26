@@ -42,8 +42,7 @@ average=total/N
 {: R}
 
 There are two huge advantages in using variables: 
-
-1.  Not having to 'hard-code' any value in our scripts. This is especially important when a single variable is referenced more than once in the script -- in that case, we only need to change the initial value assigned to the variable instead of changing the value everywhere in the script.
+1. Not having to 'hard-code' any value in our scripts. This is especially important when a single variable is referenced more than once in the script -- in that case, we only need to change the initial value assigned to the variable instead of changing the value everywhere in the script.
 2. Legibility. With good variable names, the script becomes more legible as it is apparent to other readers what is being done/evaluated at each step of the script. 
 
 >## Variable names in R
@@ -85,9 +84,9 @@ Executing the above script will yield the following:
 ~~~
 {: R}
 In the above snippet, we did the following: 
-1. Created a variable *numbers*, which was a vector of numbers
-2. Created a variable *average*, which is a function that calculates the average of a vector of numbers
-3. Assigned the result of passing *numbers* through our function *average* to a new variable *result*
+1.Created a variable *numbers*, which was a vector of numbers
+2.Created a variable *average*, which is a function that calculates the average of a vector of numbers
+3.Assigned the result of passing *numbers* through our function *average* to a new variable *result*
 
 ## Types of variables: Local vs. global variables 
 There are two distinct types of variables -- local variables and global variables.  To understand what is happening, consider the below snippets: 
