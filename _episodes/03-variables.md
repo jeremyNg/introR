@@ -48,6 +48,7 @@ There are two huge advantages in using variables:
 >## Variable names in R
 >
 > There are a few rules that needs to be observed when naming variables, namely:
+>
 >1. Variable names may not start with a number.
 >2. Variable names cannot contain mathematical symbols such as "+", "-","*", "/".
 >3. Variable names are case-sensitive.
