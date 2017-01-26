@@ -23,6 +23,7 @@ The **numeric** class is the most commonly encountered data class in R. Unlike *
 ~~~
 
 On the other hand, the when one tries to convert between a numeric and an integer (which cannot represent decimals), the decimal is stripped and the number is always **rounded down**. For example:
+
 ~~~
 > as.integer(3.6)
 [1] 3
