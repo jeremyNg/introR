@@ -100,8 +100,9 @@ The *nrow* and *ncol* specifies the number of rows and columns respectively, whi
      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
 [1,]    1    3    5    7    9   11   13   15   17    19
 [2,]    2    4    6    8   10   12   14   16   18    20
-
 ~~~
+{: R}
+
 ## Data frame 
 Similar to a matrix, a data frame has both row and columns. However, it is more general than a matrix, and allows for different columns to have different types of data. This makes the data frame one of the most versatile data types in R, and one of the most widely-used data types as well. 
 One can create a data frame using the *data.frame* command, which has the usage
