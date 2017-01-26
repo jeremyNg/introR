@@ -37,12 +37,15 @@ This behavior is extremely important to bear in mind, as it defies common mathem
  >
  > Where possible, one can convert between different classes of data using the *as.* * function. For example, in the above snippet, we were able to convert a numeric value (3.14) to an integer using *as.integer*. R will try to convert the class accordingly, but where it cannot do so, will return you **NA** with a warning message. For example:
  
-
+~~~
  > as.integer("TRUE")
 [1] NA
 Warning message:
 NAs introduced by coercion 
+~~~
+{: R}
 
+>  Unlike an **error** message, warning messages do not break your codes. Although the code will still execute, it is always worth checking to make sure the script did what you intended for it to do when you encounter a warning message. 
 
 ### Logical 
 **Logical** data can only take on TRUE or FALSE values, and are commonly encountered when we test if a certain condition is fulfilled. For example: 
