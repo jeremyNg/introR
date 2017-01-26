@@ -84,6 +84,35 @@ In the above snippet, we did the following:
 3. Assigned the result of passing *numbers* through our function *average* to a new variable *result*
 
 ## Types of variables: Local vs. global variables 
+There are two distinct types of variables -- local variables and global variables. 
 
-## Variables in R are mutable
+## Variables can be updated 
+What happens in the following code snippet? 
 
+~~~
+x<-5
+x<-x+3
+~~~
+{: R}
+
+Will *x* be 5, or 8? Trying it at the R prompt shows the following
+
+~~~
+> x
+[1] 8
+~~~
+{: output}
+
+Initially, we had assigned *x* with a value of 5. However, in the second line, we then re-assigned *x* to be *x*+3, which is interpreted to be "5+3" since *x* was assigned the value of 5. 
+
+In other words, *x* was updated because we had re-assigned the result to itself. This is an important concept, and is useful especially when we use control structures (loops, later). 
+
+Of course, if we want to preserve the value of *x* throughout, all we need to do is to assign the output of any operations referring to *x* as another variable.  For example: 
+
+~~~
+x<-5
+y<-x+3 
+~~~
+{: R}
+
+This way, we can constantly refer to *x* throughout our script and be sure the value was unchanged since the initial assignment of value. 
